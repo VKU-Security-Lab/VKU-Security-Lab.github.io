@@ -5,7 +5,7 @@ export default function memberList() {
             year: [2023, 2024],
             role: ["co-founder", "web", "forensic"],
             description: "Sống là để chiến đấu",
-            imgSrc: "",
+            imgSrc: "Dragon0zz.jpg",
             github: "https://github.com/lelong1210",
             mail: "lequanglong12102k2@gmail.com"
         },
@@ -15,7 +15,7 @@ export default function memberList() {
             year: [2023, 2024],
             role: ["co-founder", "web", "pwn", "reverse"],
             description: "Có làm thì mới có ăn, không làm mà đòi ăn thì ăn ... ăn ...",
-            imgSrc: "/images/member/shr3wd.jpeg",
+            imgSrc: "shr3wd.jpeg",
             github: "https://github.com/shr3wcl",
             mail: "tripm2112@gmail.com"
         },
@@ -25,7 +25,7 @@ export default function memberList() {
             year: [2024],
             role: ["manager", "forensic"],
             description: "Ngủ sớm, ăn uống đầy đủ, chăm tập thể dục",
-            imgSrc: "/images/member/embedangiu.jpg",
+            imgSrc: "embedangiu.jpg",
             github: "",
             mail: "trangdinhngocle@gmail.com"
         },

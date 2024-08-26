@@ -10,7 +10,7 @@ function displayMembers(members) {
         memberElement.className = 'col-md-4 mb-4';
         memberElement.innerHTML = `
             <div class="card">
-                <img src="${member.imgSrc ? member.imgSrc : "/images/member/avatar-default.png"}" class="card-img-top" alt="${member.name}">
+                <img src="${member.imgSrc ? `/images/member/${member.imgSrc}` : "/images/member/avatar-default.png"}" class="card-img-top" alt="${member.name}">
                 <div class="card-body">
                     <h5 class="card-title">${member.name}</h5>
                     <div class="card-text">${member.description}</div>
