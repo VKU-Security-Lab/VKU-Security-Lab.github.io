@@ -16,7 +16,7 @@ function displayMembers(members) {
                     <div class="card-text">${member.description}</div>
                     <div class="card-role">${member.role.map(role => role.toUpperCase()).join(', ')}</div>
                     <div class="icon-links">
-                        <a href="${member.github}" target="_blank"><img src="/images/github.png" alt="GitHub" class="icon-info"></a>
+                        <a href="${member.github == "" ? "#" : member.github}" target="${member.github == "" ? "" : "_blank"}"><img src="/images/github.png" alt="GitHub" class="icon-info"></a>
                         <a href="mailto:${member.mail}"><img src="/images/mail.png" alt="Email" class="icon-info"></a>
                     </div>
                 </div>

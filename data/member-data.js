@@ -21,6 +21,16 @@ export default function memberList() {
         },
         
         {
+            name: "hnahkdung",
+            year: [2023, 2024],
+            role: ["president", "web", "crypto"],
+            description: "Iu cuộc đời mình sống, sống cuộc đời mình iu",
+            imgSrc: "hnahkdung.jpeg",
+            github: "",
+            mail: "ltkdung.20it8@vku.udn.vn"
+        },
+
+        {
             name: "embedangiu",
             year: [2024],
             role: ["manager", "forensic"],
@@ -29,15 +39,35 @@ export default function memberList() {
             github: "",
             mail: "trangdinhngocle@gmail.com"
         },
+        
+        {
+            name: "ph4n10m",
+            year: [2023, 2024],
+            role: ["web", "forensic", "crypto", "manager"],
+            description: "Ai cũng phải bắt đầu từ đâu đó ...",
+            imgSrc: "",
+            github: "https://github.com/ph4n10m1808",
+            mail: "baovv.22ns@vku.udn.vn"
+        },
 
         {
             name: "Viet@1412",
-            year: [2024],
+            year: [2023, 2024],
             role: ["web"],
             description: "Admire yourself",
-            imgSrc: "",
+            imgSrc: "Viet@1412.jpg",
             github: "https://github.com/viet2457",
             mail: "vietnh.21it@vku.udn.vn"
+        },
+
+        {
+            name: "B14ckR053",
+            year: [2023, 2024],
+            role: ["web", "forensics"],
+            description: "Do what you love, love what you do.",
+            imgSrc: "B14ckR053.jpg",
+            github: "",
+            mail: "thanhtuan27032012@gmail.com"
         },
     
     ];
