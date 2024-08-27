@@ -31,6 +31,16 @@ export default function memberList() {
         },
 
         {
+            name: "ph4n10m",
+            year: [2023, 2024],
+            role: ["web", "forensic", "crypto", "manager"],
+            description: "Ai cũng phải bắt đầu từ đâu đó ...",
+            imgSrc: "",
+            github: "https://github.com/ph4n10m1808",
+            mail: "baovv.22ns@vku.udn.vn"
+        },
+
+        {
             name: "embedangiu",
             year: [2024],
             role: ["manager", "forensic"],
@@ -39,15 +49,15 @@ export default function memberList() {
             github: "",
             mail: "trangdinhngocle@gmail.com"
         },
-        
+
         {
-            name: "ph4n10m",
-            year: [2023, 2024],
-            role: ["web", "forensic", "crypto", "manager"],
-            description: "Ai cũng phải bắt đầu từ đâu đó ...",
-            imgSrc: "",
-            github: "https://github.com/ph4n10m1808",
-            mail: "baovv.22ns@vku.udn.vn"
+            name: "Mr.Wh1t3",
+            year: [2024],
+            role: ["manager", "web"],
+            description: "Sống chứ không tồn tại",
+            imgSrc: "Mr.Wh1t3.jpg",
+            github: "",
+            mail: "longtdh.23ns@vku.udn.vn"
         },
 
         {
@@ -69,6 +79,55 @@ export default function memberList() {
             github: "",
             mail: "thanhtuan27032012@gmail.com"
         },
-    
+
+        {
+            name: "nnmp",
+            year: [2024],
+            role: ["reverse"],
+            description: "",
+            imgSrc: "",
+            github: "",
+            mail: "phuongnnm.22ns@vku.udn.vn"
+        },
+
+        {
+            name: "Đức Lộc",
+            year: [2024],
+            role: ["web"],
+            description: "",
+            imgSrc: "",
+            github: "",
+            mail: "locdd.22ns@vku.udn.vn"
+        },
+
+        {
+            name: "boycbs",
+            year: [2024],
+            role: ["forensic"],
+            description: "Cuộc gặp gỡ đẹp nhất trên đời là gặp được phiên bản tốt nhất của mình ",
+            imgSrc: "boycbs.jpg",
+            github: "",
+            mail: "thongvd.22ns@vku.udn.vn"
+        },
+
+        {
+            name: "Hg_Leo",
+            year: [2024],
+            role: ["reverse"],
+            description: "",
+            imgSrc: "",
+            github: "",
+            mail: "hoangtv.23ns@vku.udn.vn"
+        },
+
+        {
+            name: "Armymenminh",
+            year: [2024],
+            role: ["crypto"],
+            description: "",
+            imgSrc: "",
+            github: "",
+            mail: "Biennd.21it@vku.udn.vn"
+        },
     ];
 }
