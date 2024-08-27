@@ -1,7 +1,8 @@
 export default function memberList() {
     return [
         {
-            name: "Dragon0zz",
+            alias: "Dragon0zz",
+            fullname: "Lê Quang Long",
             year: [2023, 2024],
             role: ["co-founder", "web", "forensic"],
             description: "Sống là để chiến đấu",
@@ -11,17 +12,19 @@ export default function memberList() {
         },
 
         {
-            name: "Shr3wd",
+            alias: "Shr3wd",
+            fullname: "Phạm Minh Trí",
             year: [2023, 2024],
             role: ["co-founder", "web", "pwn", "reverse"],
-            description: "Có làm thì mới có ăn, không làm mà đòi ăn thì ăn ... ăn ...",
-            imgSrc: "shr3wd.jpeg",
+            description: "We can do anything as long as we are together",
+            imgSrc: "shr3wd.png",
             github: "https://github.com/shr3wcl",
             mail: "tripm2112@gmail.com"
         },
         
         {
-            name: "hnahkdung",
+            alias: "hnahkdung",
+            fullname: "Lê Thị Khánh Dung",
             year: [2023, 2024],
             role: ["president", "web", "crypto"],
             description: "Iu cuộc đời mình sống, sống cuộc đời mình iu",
@@ -31,7 +34,8 @@ export default function memberList() {
         },
 
         {
-            name: "ph4n10m",
+            alias: "ph4n10m",
+            fullname: "Võ Văn Bảo",
             year: [2023, 2024],
             role: ["web", "forensic", "crypto", "manager"],
             description: "Ai cũng phải bắt đầu từ đâu đó ...",
@@ -41,7 +45,8 @@ export default function memberList() {
         },
 
         {
-            name: "embedangiu",
+            alias: "embedangiu",
+            fullname: "Đinh Ngọc Lê Trang",
             year: [2024],
             role: ["manager", "forensic"],
             description: "Ngủ sớm, ăn uống đầy đủ, chăm tập thể dục",
@@ -51,7 +56,8 @@ export default function memberList() {
         },
 
         {
-            name: "Mr.Wh1t3",
+            alias: "Mr.Wh1t3",
+            fullname: "Trần Đình Hoàng Long",
             year: [2024],
             role: ["manager", "web"],
             description: "Sống chứ không tồn tại",
@@ -61,7 +67,8 @@ export default function memberList() {
         },
 
         {
-            name: "Viet@1412",
+            alias: "Viet@1412",
+            fullname: "Nguyễn Hoàng Việt",
             year: [2023, 2024],
             role: ["web"],
             description: "Admire yourself",
@@ -71,7 +78,8 @@ export default function memberList() {
         },
 
         {
-            name: "B14ckR053",
+            alias: "B14ckR053",
+            fullname: "Phan Thanh Tuấn",
             year: [2023, 2024],
             role: ["web", "forensics"],
             description: "Do what you love, love what you do.",
@@ -81,7 +89,8 @@ export default function memberList() {
         },
 
         {
-            name: "nnmp",
+            alias: "nnmp",
+            fullname: "Nguyễn Ngọc Mai Phương",
             year: [2024],
             role: ["reverse"],
             description: "",
@@ -91,7 +100,8 @@ export default function memberList() {
         },
 
         {
-            name: "Đức Lộc",
+            alias: "Linh",
+            fullname: "Đặng Đức Lộc",
             year: [2024],
             role: ["web"],
             description: "",
@@ -101,7 +111,8 @@ export default function memberList() {
         },
 
         {
-            name: "boycbs",
+            alias: "boycbs",
+            fullname: "Võ Đức Thống",
             year: [2024],
             role: ["forensic"],
             description: "Cuộc gặp gỡ đẹp nhất trên đời là gặp được phiên bản tốt nhất của mình ",
@@ -111,7 +122,8 @@ export default function memberList() {
         },
 
         {
-            name: "Hg_Leo",
+            alias: "Hg_Leo",
+            fullname: "Trần Viết Hoàng",
             year: [2024],
             role: ["reverse"],
             description: "",
@@ -121,7 +133,8 @@ export default function memberList() {
         },
 
         {
-            name: "Armymenminh",
+            alias: "Armymenminh",
+            fullname: "Nguyễn Doãn Biên",
             year: [2024],
             role: ["crypto"],
             description: "",

@@ -11,69 +11,7 @@
     <script src="/page/elements/render.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-    <style>
-        .list-group-item {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-            background-color: #fff;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-    
-        .list-group-item img {
-            width: 260px;
-            height: 160px;
-            margin-right: 20px;
-            border-radius: 5px;
-            object-fit: cover;
-            transition: transform 0.3s ease-in-out;
-        }
-    
-        .writeup-info {
-            flex-grow: 1;
-            height: 100%;
-        }
-    
-        .writeup-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-        }
-    
-        .writeup-description {
-            font-size: 16px;
-            color: #555;
-            margin: 26px 0;
-        }
-    
-        .writeup-meta {
-            font-size: 14px;
-            color: #777;
-        }
-    
-        /* Hover Effects */
-        .list-group-item:hover {
-            background-color: #f8f9fa;
-            transform: scale(1.02);
-        }
-    
-        .list-group-item:hover img {
-            transform: scale(1.05);
-        }
-
-        /* Display ... when description too long*/
-        .writeup-description {
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-    </style>
-
+    <link rel="stylesheet" href="/asset/css/writeup.css">
 </head>
 
 <body>
@@ -86,7 +24,7 @@
                     <h1 class="text-center">Write-ups</h1>
                 </header>
                 <hr>
-                <div class="row mb-3">
+                <div class="row mb-5">
                     <div class="col">
                         <label for="yearFilter" class="form-label">Filter by Year:</label>
                         <select class="form-select" id="yearFilter" onchange="filterWriteup()">

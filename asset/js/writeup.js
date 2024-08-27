@@ -29,9 +29,23 @@ function displayList(writeups) {
         meta.classList.add('writeup-meta');
         meta.textContent = `Published on ${writeup.date} by ${writeup.author}`;
 
+        // Tag display
+        const tags = document.createElement('div');
+        tags.classList.add('writeup-tags');
+        writeup.tags.forEach(tag => {
+            const tagElement = document.createElement('span');
+            tagElement.classList.add('badge', 'badge-primary', 'badge-pill');
+            tagElement.textContent = tag;
+            tags.appendChild(tagElement);
+        });
+
+        console.log(tags);
+        
+
         infoDiv.appendChild(title);
         infoDiv.appendChild(description);
         infoDiv.appendChild(meta);
+        infoDiv.appendChild(tags);
 
         item.appendChild(banner);
         item.appendChild(infoDiv);
@@ -65,7 +79,6 @@ function displayTags() {
 function displayYears() {
     const years = writeupList().reduce((acc, writeup) => {
         const year = writeup.date.split('/')[2];
-        console.log(year);
         
         if (!acc.includes(year)) {
             acc.push(year);

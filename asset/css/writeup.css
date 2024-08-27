@@ -1,0 +1,98 @@
+.writeup-tags {
+    float: right;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.writeup-tags a {
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #0f0;
+    color: #010101;
+    text-decoration: none;
+}
+
+.writeup-tags a:hover {
+    background-color: #000;
+    color: #0f0;
+}
+
+.badge {
+    background-color: #0f0;
+    color: #010101;
+}
+
+.badge-primary {
+    background-color: #0f0;
+    color: #010101;
+}
+
+.badge-primary:hover {
+    background-color: #000;
+    color: #0f0;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.list-group-item img {
+    width: 260px;
+    min-width: 260px;
+    height: 160px;
+    margin-right: 20px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #ddd;
+}
+
+.writeup-info {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.writeup-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.writeup-description {
+    font-size: 16px;
+    color: #555;
+    margin: 26px 0;
+}
+
+.writeup-meta {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Hover Effects */
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.02);
+}
+
+.list-group-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Display ... when description too long*/
+.writeup-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

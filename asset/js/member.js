@@ -10,10 +10,10 @@ function displayMembers(members) {
         memberElement.className = 'col-md-4 mb-4';
         memberElement.innerHTML = `
             <div class="card">
-                <img src="${member.imgSrc ? `/images/member/${member.imgSrc}` : "/images/member/avatar-default.png"}" class="card-img-top" alt="${member.name}">
+                <img src="${member.imgSrc ? `/images/member/${member.imgSrc}` : "/images/member/avatar-default.png"}" class="card-img-top" alt="${member.alias}">
                 <div class="card-body">
-                    <h5 class="card-title">${member.name}</h5>
-                    <div class="card-text">${member.description}</div>
+                    <h5 class="card-title">${member.alias}</h5>
+                    <div class="card-text">${member.description == "" ? "Lowkey Hacker" : "<p>Motto:</p>" + member.description}</div>
                     <div class="card-role">${member.role.map(role => role.toUpperCase()).join(', ')}</div>
                     <div class="icon-links">
                         <a href="${member.github == "" ? "#" : member.github}" target="${member.github == "" ? "" : "_blank"}"><img src="/images/github.png" alt="GitHub" class="icon-info"></a>
