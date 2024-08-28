@@ -6,7 +6,7 @@ export default function memberList() {
             year: [2023, 2024],
             role: ["co-founder", "web", "forensic"],
             description: "Sống là để chiến đấu",
-            imgSrc: "dragon0zz.jpg",
+            imgSrc: "dragon0zz.png",
             github: "https://github.com/lelong1210",
             mail: "lequanglong12102k2@gmail.com"
         },
