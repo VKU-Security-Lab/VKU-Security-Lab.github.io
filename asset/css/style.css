@@ -1,7 +1,7 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    min-height:  90vh !important;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', monospace !important;
@@ -21,6 +21,10 @@ html {
     margin-top: 100px;
 }
 
+.active {
+    color: #fff !important;
+}
+
 .nav-section {
     flex: 2;
     padding-left: 20px;
@@ -38,8 +42,33 @@ html {
     color: #0f0;
 }
 
+
 .navbar-custom .nav-link:hover {
     color: #fff;
+}
+
+/* navbarNav with class show */
+
+
+#navbarNav {
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #010101;
+        border-top: 1px solid #0f0;
+        z-index: 1;
+        padding: 20px;
+    }
 }
 
 .header-container {
@@ -117,6 +146,12 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#footer {
+    /* always place end of page */
+    position: absolute;
+    width: 100%;
 }
 
 .dark-mode #container-detail {
@@ -316,29 +351,34 @@ b {
     text-align: center;
 }
 
+h1.glitch {
+    position: relative;
+    display: inline-block;
+    /* Giúp thẻ h1 chỉ chiếm đủ không gian của nội dung */
+    /* Màu chữ ban đầu */
+}
+
 .glitch::before,
 .glitch::after {
-    content: "WELCOME TO VSL";
+    content: attr(data-text);
+    /* Sử dụng thuộc tính data-text của thẻ h1 để lặp lại nội dung */
     position: absolute;
-    /* Display center of parent */
-    /* width: 100%; */
-    /* top: 20%; */
-    /* right: -20%; */
-    /* bottom: 20%; */
-    background-color: inherit;
-    color: inherit;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Chiều rộng bằng với thẻ h1 */
+    height: 100%;
+    /* Chiều cao bằng với thẻ h1 */
+    overflow: visible;
+    /* Đảm bảo nội dung không bị cắt bớt */
 }
 
 .glitch::before {
-    left: 33%;
     text-shadow: -2px 0 red;
     animation: glitchBefore 1.5s infinite;
 }
 
 .glitch::after {
-    left: 33%;
     text-shadow: -2px 0 blue;
     animation: glitchAfter 1.5s infinite;
 }
@@ -580,10 +620,3 @@ b {
     }
 }
 
-@media (max-width: 768px) {
-    .glitch {
-        font-size: 2.5rem;
-    }
-}
-
-/* Glitch */

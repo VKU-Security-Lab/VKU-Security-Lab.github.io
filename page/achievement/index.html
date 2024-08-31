@@ -1,3 +1,5 @@
+<!-- Developed by: Shr3wd - Phạm Minh Trí at 8/2024 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +18,57 @@
     <div id="main">
         <div id="header">
 
+        </div>
+
+        <div id="body">
+            <div class="container my-5">
+                <header class="mb-4">
+                    <h1 class="text-center">Achievement</h1>
+                </header>
+                <hr>
+                <div class="row mb-5">
+                    <div class="col">
+                        <label for="yearFilter" class="form-label">Filter by Year:</label>
+                        <select class="form-select" id="yearFilter" onchange="filterAchievement()">
+                            <option value="all">All Years</option>
+                            <!-- Add more years as needed -->
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="tagFilter" class="form-label">Filter by Tags:</label>
+                        <select class="form-select" id="tagFilter" onchange="filterAchievement()">
+                            <option value="all">All Tags</option>
+                            <!-- Add more roles as needed -->
+                        </select>
+                    </div>
+                </div>
+                <div id="list">
+                    <!-- List of achievements will be rendered here -->
+                     <!-- TEmplate example -->
+                    <!-- Year -->
+                    <div class="row mb-4">
+                        <div class="col">
+                            <h2>2024</h2>
+                        </div>
+
+                        <!-- List achievements -->
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card mb-4">
+                                    <img src="/asset/img/achievement/achievement-1.jpg" class="card-img-top"
+                                        alt="Achievement 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title
+                                        ">Achievement 1</h5>
+                                        <p class="card-text">Achievement 1 description</p>
+                                        <a href="/page/achievement/achievement-1" class="btn btn-primary">Read more</a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="footer">

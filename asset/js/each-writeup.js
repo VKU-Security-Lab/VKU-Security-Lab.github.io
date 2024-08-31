@@ -17,11 +17,9 @@ function loadMarkdown(fileName) {
             document.getElementById('time-reading').innerHTML = `<b>🕛 Time reading:</b> ${timeReading} min`;
             const tableOfContents = document.getElementById('table-of-contents');
             const dataTableOfContents = html.match(/<h[1-6].*?>.*?<\/h[1-6]>/g);
-            console.log(dataTableOfContents);
             if (dataTableOfContents) {
                 tableOfContents.innerHTML = "<h2>Table of Contents</h2>";
                 dataTableOfContents.forEach(element => {
-                    console.log(element);
                     
                     const tag = element.match(/<h[1-6]/g)[0];
                     const title = element.match(/<h[1-6].*?>(.*?)<\/h[1-6]>/)[1];
@@ -55,6 +53,23 @@ function loadMarkdown(fileName) {
                         }, 1000);
                     }
                 });
+
+                const images = document.querySelectorAll('#content img');
+                images.forEach((image, index) => {
+                    image.style.cursor = 'pointer';
+                    image.addEventListener('click', () => {
+                        const pswpElement = document.querySelectorAll('.pswp')[0];
+                        const items = [{ src: image.getAttribute('src'), w: 1200, h: 900 }];
+                        const options = {
+                            index: index,
+                            bgOpacity: 0.7,
+                            showHideOpacity: true
+                        };
+                        const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+                        gallery.init();
+                    });
+                });
+
             }
         }).catch(error => {
             console.error('Error loading the markdown file:', error);

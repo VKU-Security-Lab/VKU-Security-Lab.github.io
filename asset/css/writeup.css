@@ -96,3 +96,23 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .list-group-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-group-item img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .writeup-info {
+        width: 100%;
+    }
+}
+

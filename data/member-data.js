@@ -84,7 +84,7 @@ export default function memberList() {
             role: ["web", "forensics"],
             description: "Do what you love, love what you do.",
             imgSrc: "B14ckR053.jpg",
-            github: "",
+            github: "https://github.com/b14ckr0s3",
             mail: "thanhtuan27032012@gmail.com"
         },
 
@@ -93,8 +93,8 @@ export default function memberList() {
             fullname: "Nguyễn Ngọc Mai Phương",
             year: [2024],
             role: ["reverse"],
-            description: "",
-            imgSrc: "",
+            description: "Độc lập - Tự do - Hạnh phúc",
+            imgSrc: "nnmp.jpg",
             github: "",
             mail: "phuongnnm.22ns@vku.udn.vn"
         },
@@ -104,7 +104,7 @@ export default function memberList() {
             fullname: "Đặng Đức Lộc",
             year: [2024],
             role: ["web"],
-            description: "",
+            description: "Tự do - Bình Đẳng - Bác Ái",
             imgSrc: "",
             github: "",
             mail: "locdd.22ns@vku.udn.vn"
