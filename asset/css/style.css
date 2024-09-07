@@ -7,6 +7,10 @@ body {
     font-family: 'Open Sans', monospace !important;
 }
 
+p {
+    font-size: 18px;
+}
+
 body {
     margin-top: 70px;
     /* background-color: #010101;
@@ -34,7 +38,8 @@ html {
     background-color: #010101;
     border-bottom: 1px solid #0f0;
     min-height: 70px;
-    height: 70px;
+    height: auto;
+    padding-bottom: 20px;
 }
 
 .navbar-custom .navbar-brand,
@@ -81,12 +86,6 @@ html {
     height: 50px;
 }
 
-#logo-header {
-    border-radius: 50%;
-    border: 0.2px solid #0f0;
-    width: 40px;
-    height: 40px;
-}
 
 .icon-info {
     max-width: 16px;
@@ -618,5 +617,37 @@ h1.glitch {
     100% {
         transform: translateY(0);
     }
+}
+
+#logo-header {
+    background-color: #fff;
+    color: #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2.5px solid #0f0;
+}
+
+#banner-img {
+    
+    margin-bottom: 40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-image: url('/images/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    /* animation: float 6s ease-in-out infinite; */
+
+}
+
+#banner-img img {
+    
 }
 
