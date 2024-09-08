@@ -18,7 +18,7 @@ export default function Footer() {
             </div>
             <div class="col-md-4">
                 <h5><b>Contact Information</b></h5>
-                <p>Email: vkuctf@gmail.com</p>
+                <p>Email: <a href="mailto:vku.sec.lab@gmail.com">vku.sec.lab@gmail.com</a></p>
                 <!--<p>Phone: +123 456 7890</p> -->
                 <p>470 Tran Dai Nghia, Ngu Hanh Son, Da Nang</p>
             </div>
