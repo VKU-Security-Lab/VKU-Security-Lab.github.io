@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 '  University of Information and Communication',
                 '  Technology (VKU), Da Nang.',
                 '',
-                '  Founded:    <span class="t-accent">02/04/2024</span>',
+                '  Founded:    <span class="t-accent">11/11/2023</span>',
                 '  President:',
                 '    Gen 1:    <span class="t-accent">Lê Thị Khánh Dung</span> (K20)',
                 '    Gen 2:    <span class="t-accent">Phạm Minh Trí</span> (K21)',

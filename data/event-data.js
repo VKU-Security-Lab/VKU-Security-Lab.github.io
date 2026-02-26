@@ -100,7 +100,7 @@ export const events = [
     },
     {
         title: "Thành lập CLB VKU Security Lab",
-        date: "02/04/2024",
+        date: "11/11/2023",
         type: "milestone",
         description: "Câu lạc bộ chính thức thành lập. Chủ nhiệm Gen 1: Lê Thị Khánh Dung (K20).",
         tags: ["Milestone", "Founded"],
