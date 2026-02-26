@@ -18,7 +18,7 @@ export default function memberList() {
             role: ["co-founder", "web", "pwn", "reverse"],
             description: "We can do anything as long as we are together",
             imgSrc: "shr3wd.png",
-            github: "https://github.com/shr3wcl",
+            github: "https://github.com/d4kw1n",
             mail: "tripm2112@gmail.com"
         },
         

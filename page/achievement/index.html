@@ -1,5 +1,3 @@
-<!-- Developed by: Shr3wd - Phạm Minh Trí at 8/2024 -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,53 +15,200 @@
 
 <body>
     <div id="main">
-        <div id="header">
-
-        </div>
+        <div id="header"></div>
 
         <div id="body">
             <div class="container my-5">
-                <header class="mb-4">
-                    <h1 class="text-center">Achievement</h1>
-                </header>
+                <div class="page-header">
+                    <h1>Achievement</h1>
+                    <p>Our milestones and accomplishments</p>
+                </div>
                 <hr>
-                <div class="row mb-5">
-                    <div class="col">
+
+                <div class="row mb-4 g-3">
+                    <div class="col-md-6">
                         <label for="yearFilter" class="form-label">Filter by Year:</label>
                         <select class="form-select" id="yearFilter" onchange="filterAchievement()">
                             <option value="all">All Years</option>
-                            <!-- Add more years as needed -->
                         </select>
                     </div>
-                    <div class="col">
+                    <div class="col-md-6">
                         <label for="tagFilter" class="form-label">Filter by Tags:</label>
                         <select class="form-select" id="tagFilter" onchange="filterAchievement()">
                             <option value="all">All Tags</option>
-                            <!-- Add more roles as needed -->
                         </select>
                     </div>
                 </div>
-                <div id="list">
-                    <!-- List of achievements will be rendered here -->
-                     <!-- TEmplate example -->
-                    <!-- Year -->
-                    <div class="row mb-4">
-                        <div class="col">
-                            <h2>2024</h2>
-                        </div>
 
-                        <!-- List achievements -->
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card mb-4">
-                                    <img src="/asset/img/achievement/achievement-1.jpg" class="card-img-top"
-                                        alt="Achievement 1">
+                <div id="list">
+                    <!-- 2026 -->
+                    <div class="mb-5">
+                        <h2 class="mb-3">2026</h2>
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title
-                                        ">Achievement 1</h5>
-                                        <p class="card-text">Achievement 1 description</p>
-                                        <a href="/page/achievement/achievement-1" class="btn btn-primary">Read more</a>
-                                    </div> 
+                                        <h5 class="card-title">VSL CTF 2026</h5>
+                                        <p class="card-text">Tổ chức giải CTF đầu tiên (24-25/01/2026) — 114 đội tham gia, format Jeopardy. Top 1: UniverSea (9,869 pts). Rating weight: 23.62 trên CTFtime.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CTFtime Rank #131 Global</h5>
+                                        <p class="card-text">Xếp hạng #131 toàn cầu, #13 Việt Nam trên CTFtime năm 2026.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2025 -->
+                    <div class="mb-5">
+                        <h2 class="mb-3">2025</h2>
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sinh viên An ninh mạng 2025 — Giải Khuyến Khích</h5>
+                                        <p class="card-text">Đội VKU-T1 đạt Giải Khuyến Khích tại chung kết Attack-Defend cuộc thi Sinh viên An ninh mạng 2025.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Diễn tập ứng cứu sự cố ANTT Đà Nẵng 2025 — Giải Ba</h5>
+                                        <p class="card-text">Đạt giải ba tại cuộc Diễn tập ứng cứu sự cố An ninh mạng 2025 tổ chức tại Đà Nẵng.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CyberFest 2025 tại ĐH Duy Tân — Giải Ba</h5>
+                                        <p class="card-text">Đạt giải ba tại cuộc thi CyberFest tháng 10/2025 tổ chức tại Đại học Duy Tân.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hội nghị Bảo mật Quốc tế tại ĐH Duy Tân — Giải Ba</h5>
+                                        <p class="card-text">Đạt giải ba tại hội nghị bảo mật quốc tế diễn ra tại Đại học Duy Tân năm 2025.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">HCMUS CTF 2025 — Giải Khuyến Khích bảng Tài Năng</h5>
+                                        <p class="card-text">Đạt Giải Khuyến Khích bảng Tài Năng tại cuộc thi CTF do ĐH Khoa học Tự nhiên TP.HCM tổ chức năm 2025.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hackathon 2025 Champion</h5>
+                                        <p class="card-text">Vô địch "Hackathon 2025: Good and Evil Mixed Together" — do DevSecOps Solutions Vietnam & TouchCyber tổ chức (04/2025).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Digital Dragons CTF 2025</h5>
+                                        <p class="card-text">VKU đăng cai vòng loại — 146 đội, 573 thí sinh, 28 trường ĐH. VSL.T1 & VSL.0utl4w lọt vào chung kết quốc gia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">80+ CTF Quốc Tế</h5>
+                                        <p class="card-text">Tham gia 80+ giải CTF trong năm 2025: FooBar CTF (#25), Nowruz 1404 (#25), pingCTF (#33), COMPFEST (#32), SwampCTF (#102), WolvCTF (#83).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2024 -->
+                    <div class="mb-5">
+                        <h2 class="mb-3">2024</h2>
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ASCIS 2024 — Giải Khuyến Khích</h5>
+                                        <p class="card-text">Lần thứ 3 tham gia Sinh viên với ATTT ASEAN. VSL.Xp10r3rs (Trí, Bảo, Trường, Phát) top 20 nhóm A. VSL.Defenders (Long, Vũ, Phương, Dung) #11/63 nhóm B, giành Giải Khuyến Khích.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">RSTCON 2024 CTF — #15</h5>
+                                        <p class="card-text">Xếp hạng 15 tại RSTCON 2024 CTF với 4,450 điểm (14.908 rating).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">M*CTF 2024 Junior — #19</h5>
+                                        <p class="card-text">Xếp hạng 19 tại M*CTF 2024 Junior Quals với 19,600 điểm (12.600 rating).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Metared Argentina — #20</h5>
+                                        <p class="card-text">Xếp hạng 20 tại Metared Argentina CERTUNLP 2024 với 4,047 điểm (11.476 rating).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">40+ CTF Quốc Tế</h5>
+                                        <p class="card-text">angstromCTF (#218), ISITDTU (#102), HKCERT (#139), SunshineCTF (#115), Questcon (#124). CTFtime rank #587 global, #30 VN.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2023 -->
+                    <div class="mb-5">
+                        <h2 class="mb-3">2023</h2>
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Digital Dragons CTF 2023</h5>
+                                        <p class="card-text">VKU đăng cai vòng chung kết — 100 đội, 500 thành viên từ các trường ĐH toàn quốc. Được bảo trợ bởi Cục An toàn thông tin — Bộ TT&TT.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SVATTT 2023</h5>
+                                        <p class="card-text">Lần thứ 2 tham gia cuộc thi Sinh viên với An toàn thông tin tại TP. Hồ Chí Minh.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <img src="/asset/img/achievement/achievement-1.jpg" class="card-img-top" alt="Red Team 2023">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Red Team Đà Nẵng — Giải Ba</h5>
+                                        <p class="card-text">Đạt giải ba diễn tập thực chiến Red-Team Đà Nẵng (11/2023).</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -72,10 +217,9 @@
             </div>
         </div>
 
-        <div id="footer">
-
-        </div>
+        <div id="footer"></div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

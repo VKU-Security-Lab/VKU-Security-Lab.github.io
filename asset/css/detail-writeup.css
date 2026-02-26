@@ -1,1 +1,22 @@
-/* reponsive */
+/* Detail writeup responsive */
+@media (max-width: 768px) {
+    #container-detail {
+        padding: 0 0.75rem;
+    }
+
+    #writeup-info {
+        padding: 0 0.5rem;
+    }
+
+    #table-of-contents {
+        padding: 0 0.5rem;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    #content img {
+        max-width: 100% !important;
+    }
+}

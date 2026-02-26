@@ -2,37 +2,94 @@ import memberList from "/data/member-data.js";
 
 const members = memberList();
 
-function displayMembers(members) {
-    const container = document.getElementById('membersList');
-    container.innerHTML = '';
-    members.forEach(member => {
-        const memberElement = document.createElement('div');
-        memberElement.className = 'col-md-4 mb-4';
-        memberElement.innerHTML = `
-            <div class="card">
-                <img src="${member.imgSrc ? `/images/member/${member.imgSrc}` : "/images/member/avatar-default.png"}" class="card-img-top" alt="${member.alias}">
-                <div class="card-body">
-                    <h5 class="card-title">${member.alias}</h5>
-                    <div class="card-text">${member.description == "" ? "Lowkey Hacker" : "<p>Motto:</p>" + member.description}</div>
-                    <div class="card-role">${member.role.map(role => role.toUpperCase()).join(', ')}</div>
-                    <div class="icon-links">
-                        <a href="${member.github == "" ? "#" : member.github}" target="${member.github == "" ? "" : "_blank"}"><img src="/images/github.png" alt="GitHub" class="icon-info"></a>
-                        <a href="mailto:${member.mail}"><img src="/images/mail.png" alt="Email" class="icon-info"></a>
+const ROLE_LABELS = {
+    president: 'President',
+    'co-founder': 'Co-Founder',
+    manager: 'Manager',
+    designer: 'Designer',
+    developer: 'Developer',
+    web: 'Web',
+    pwn: 'Pwn',
+    crypto: 'Crypto',
+    reverse: 'Reverse',
+    forensic: 'Forensic',
+    forensics: 'Forensic',
+    misc: 'Misc',
+    network: 'Network',
+    cloud: 'Cloud',
+};
+
+function roleOrder(role) {
+    const order = ['president', 'co-founder', 'manager', 'web', 'pwn', 'crypto', 'reverse', 'forensic', 'forensics', 'network', 'cloud', 'misc', 'designer', 'developer'];
+    const idx = order.indexOf(role);
+    return idx === -1 ? 99 : idx;
+}
+
+function renderCard(member) {
+    const imgSrc = member.imgSrc
+        ? `/images/member/${member.imgSrc}`
+        : '/images/member/avatar-default.png';
+
+    const roles = [...member.role]
+        .sort((a, b) => roleOrder(a) - roleOrder(b))
+        .map(r => `<span class="role-badge role-badge--${r}">${ROLE_LABELS[r] || r}</span>`)
+        .join('');
+
+    const motto = member.description
+        ? `<p class="member-motto">"${member.description}"</p>`
+        : '<p class="member-motto">Lowkey Hacker</p>';
+
+    const githubLink = member.github
+        ? `<a href="${member.github}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>`
+        : '';
+
+    const mailLink = member.mail
+        ? `<a href="mailto:${member.mail}" title="Email"><i class="fas fa-envelope"></i></a>`
+        : '';
+
+    return `
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+            <div class="member-card">
+                <div class="member-avatar-wrap">
+                    <img class="member-avatar" src="${imgSrc}" alt="${member.alias}" loading="lazy">
+                </div>
+                <div class="member-info">
+                    <h5 class="member-alias">${member.alias}</h5>
+                    <p class="member-fullname">${member.fullname}</p>
+                    <div class="member-roles">${roles}</div>
+                    ${motto}
+                    <div class="member-socials">
+                        ${githubLink}
+                        ${mailLink}
                     </div>
                 </div>
-            </div>`;
-        container.appendChild(memberElement);
-    });
+            </div>
+        </div>`;
+}
+
+function displayMembers(list) {
+    const container = document.getElementById('membersList');
+    const countEl = document.getElementById('memberCount');
+
+    if (list.length === 0) {
+        container.innerHTML = '<div class="members-empty">No members found matching filters.</div>';
+    } else {
+        container.innerHTML = list.map(renderCard).join('');
+    }
+
+    if (countEl) {
+        countEl.innerHTML = `Showing <span>${list.length}</span> member${list.length !== 1 ? 's' : ''}`;
+    }
 }
 
 function filterMembers() {
     const selectedYear = document.getElementById('yearFilter').value;
     const selectedRole = document.getElementById('roleFilter').value;
-    const filteredMembers = members.filter(member =>
-        (selectedYear === 'all' || member.year.includes(parseInt(selectedYear))) &&
-        (selectedRole === 'all' || member.role.includes(selectedRole))
+    const filtered = members.filter(m =>
+        (selectedYear === 'all' || m.year.includes(parseInt(selectedYear))) &&
+        (selectedRole === 'all' || m.role.includes(selectedRole))
     );
-    displayMembers(filteredMembers);
+    displayMembers(filtered);
 }
 
 window.filterMembers = filterMembers;

@@ -1,30 +1,38 @@
 export default function Footer() {
-    return `<footer class="bg-dark text-white pt-4 pb-2">
+    const currentYear = new Date().getFullYear();
+
+    return `
+<footer class="site-footer">
     <div class="container">
-        <div class="row">
+        <div class="row g-4">
             <div class="col-md-4">
-                <h5><b>VKU Security Lab</b></h5>
+                <h5>VKU Security Lab</h5>
                 <p>Vietnam-Korea University of Information and Communication Technology</p>
-                <p>Dedicated to advancing knowledge and interest in cybersecurity.</p>
+                <p>Advancing knowledge and passion in cybersecurity.</p>
             </div>
             <div class="col-md-4">
-                <h5><b>Quick Links</b></h5>
+                <h5>Quick Links</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item"><a href="/page/about_us/" class="nav-link text-white-50">About Us</a></li>
-                    <li class="nav-item"><a href="/page/event/" class="nav-link text-white-50">Events</a></li>
-                    <li class="nav-item"><a href="/page/recruitment/" class="nav-link text-white-50">Join Us</a></li>
-                    <li class="nav-item"><a href="/page/member/" class="nav-link text-white-50">Members</a></li>
+                    <li class="nav-item"><a href="/page/about_us/" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="/page/event/" class="nav-link">Events</a></li>
+                    <li class="nav-item"><a href="/page/recruitment/" class="nav-link">Join Us</a></li>
+                    <li class="nav-item"><a href="/page/member/" class="nav-link">Members</a></li>
                 </ul>
             </div>
             <div class="col-md-4">
-                <h5><b>Contact Information</b></h5>
+                <h5>Contact</h5>
                 <p>Email: <a href="mailto:vsl@vku.udn.vn">vsl@vku.udn.vn</a></p>
-                <!--<p>Phone: +123 456 7890</p> -->
                 <p>470 Tran Dai Nghia, Ngu Hanh Son, Da Nang</p>
+                <p>
+                    <a href="https://facebook.com/vkuseclab" target="_blank"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;
+                    <a href="https://github.com/VKU-Security-Lab" target="_blank"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
+                    <a href="https://discord.gg/PSvX9EwtDR" target="_blank"><i class="fab fa-discord"></i></a>&nbsp;&nbsp;
+                    <a href="https://ctftime.org/team/284373" target="_blank"><i class="fas fa-flag"></i></a>
+                </p>
             </div>
         </div>
-        <div class="text-center mt-3">
-            © 2026 VKU Security Lab - All Rights Reserved
+        <div class="footer-bottom">
+            &copy; ${currentYear} VKU Security Lab &mdash; All Rights Reserved
         </div>
     </div>
 </footer>
